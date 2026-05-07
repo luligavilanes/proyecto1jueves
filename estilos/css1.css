@@ -1,20 +1,20 @@
 h1{
-    color: #f4d0ff
+    color: #fff7f7
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 p{
-    color : #5faac1
+    color : #865fc1
     font-family: verdana, sans-serif;
 
 }
 body{
-    background-color: #ffdefe;
+    background-color: #f9adad;
 }
 header{
-    background-color: #e2c1ff;
-    color: #4f93b7;
+    background-color: #feffd4;
+    color: #f1efe9;
     text-align:     center;    
     padding: 10px;
 }
