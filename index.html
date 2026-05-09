@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Mi primer sitio</title>
-  <link rel="stylesheet" href="estilos/css1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Lucía Gavilanes</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <h1>Mi primer sitio</h1>
+<nav class="glass-nav fixed w-full z-50 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold gradient-text">L. Gavilanes</a>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">inicio</a></li>
-        <li><a href="intereses.html">intereses</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="intereses.html" class="nav-link">Intereses</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+    </div>
+</nav>
 
-  <main>
-    <p>Hola, soy Lucia Gavilanes</p>
+<section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-    <p>Mi perfil:</p>
+        <div>
+            <span class="text-sm uppercase tracking-widest text-pink-400 font-bold mb-2 block">
+                Bienvenido a mi mundo
+            </span>
 
-    <img src="./img/img/infografia-lucia.png" alt="Mi infografía" class="imagen-perfil">
-  </main>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-800">
+                Hola, soy <span class="gradient-text italic">Lucía Gavilanes</span>
+            </h1>
 
-  <footer>
-    <p>Todos los derechos reservados</p>
-  </footer>
+            <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                Estudiante de 4to año de Marketing en la UADE.
+                Actualmente combino mi formación académica con mi rol profesional en Cencosud.
+            </p>
+
+            <div class="flex gap-4">
+                <a href="contacto.html" class="bg-purple-600 text-white px-8 py-3 rounded-full font-bold hover:bg-purple-700 transition shadow-lg">
+                    Contacto
+                </a>
+
+                <a href="intereses.html" class="border-2 border-purple-100 text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-purple-50 transition">
+                    Saber más
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="profile-img-container">
+                <img src="img/img/infografia-lucia.png" alt="Lucía Gavilanes" class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+    </div>
+</section>
 
 </body>
-
 </html>

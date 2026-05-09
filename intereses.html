@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio personal</title>
-<link rel="stylesheet" href="estilos/css1.css">
-    <style>
-        h1{
-            color: #321c57;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        p{                              
-            color: #321c57;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-        } 
-    </style>  
+    <title>Intereses | Lucía Gavilanes</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Mi primer sitio</h1>
-        <nav>
-            <ul>
-            <li>
-                <a href="index.html">inicio</a>
-            <li>
-            <li>  
-            <a href="intereses.html">intereses</a>
-            <li>
-            <li>
-            <a href="contacto.html">contacto</a>
-            <li>
-            <ul>
-        </nav>
-    </header>
-    <main>
- <h2>intereses</h2>
- <p> En mi tiempo libre me gusta hacer actividad fisica como ir al gimnasio, ver netflix y juntarme con mis amigas para charlar y pasar un buen rato.</p>
- <p> Me gusta mucho viajar, conocer nuevos lugares y culturas. </p>
- <p> Mi pasatiempo favorito es cocinar, me encanta experimentar con nuevas recetas y sabores en la cocina. </p>
-    </main>
-    <footer>
-   <p>Todos los derechos reservados</p>     
-    </footer>
+
+<nav class="glass-nav fixed w-full z-50 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold gradient-text">L. Gavilanes</a>
+
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="intereses.html" class="nav-link">Intereses</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<section class="py-32 px-6 bg-purple-50">
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Más sobre mí</h2>
+            <div class="w-20 h-1 bg-pink-300 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="section-card p-8 text-center">
+                <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-dumbbell text-pink-500 text-2xl"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mb-4">Estilo de Vida</h3>
+
+                <p class="text-gray-600">
+                    Me gusta entrenar y disfrutar momentos de relax viendo series.
+                </p>
+            </div>
+
+            <div class="section-card p-8 text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-plane-departure text-blue-500 text-2xl"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mb-4">Viajes</h3>
+
+                <p class="text-gray-600">
+                    Me apasiona conocer nuevos lugares y culturas.
+                </p>
+            </div>
+
+            <div class="section-card p-8 text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-utensils text-green-500 text-2xl"></i>
+                </div>
+
+                <h3 class="text-xl font-bold mb-4">Cocina</h3>
+
+                <p class="text-gray-600">
+                    Disfruto experimentar con recetas y sabores nuevos.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
